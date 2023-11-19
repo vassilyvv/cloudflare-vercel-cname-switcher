@@ -1,0 +1,23 @@
+[project]
+name = "cloudflare-cname-switcher"
+version = "0.1.0"
+
+[tool.poetry]
+name = "cloudflare-cname-switcher"
+description = "E-commerce framework"
+version = "0.1.0"
+authors = ["Vassily Vorobyov <vassily.v.v@gmail.com>"]
+packages = [{include = "switcher", from = "."}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cloudflare = "^2.12.4"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0.post1"
+
+[tool.setuptools]
+packages = ["switcher"]
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
